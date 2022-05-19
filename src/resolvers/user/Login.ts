@@ -22,9 +22,9 @@ export class LoginResolver {
             return null;
         }
         //check if users confirmed their email
-        if(!user.confirmed){
-            throw new Error("Please confirm your email");
-        }
+        // if(!user.confirmed){
+        //     throw new Error("Please confirm your email");
+        // }
         //@ts-ignore
         ctx.req.session!.userId = user.id;
         return user;
