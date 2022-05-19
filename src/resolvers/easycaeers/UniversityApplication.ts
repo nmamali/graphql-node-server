@@ -17,7 +17,9 @@ export class CreateUniversityApplicationResolver {
                            name,
                            url,
                            location,
-                           image
+                           image,
+                           description,
+                           applicationUrl
                        }: UniversityInputType): Promise<University> {
 
         return await University.create({
@@ -25,6 +27,8 @@ export class CreateUniversityApplicationResolver {
             location,
             url,
             image,
+            description,
+            applicationUrl,
             isDeleted: false
         }).save()
 

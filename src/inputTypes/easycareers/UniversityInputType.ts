@@ -14,4 +14,10 @@ export class UniversityInputType {
 
     @Field()
     image: string
+
+    @Field()
+    description: string
+
+    @Field()
+    applicationUrl: string
 }

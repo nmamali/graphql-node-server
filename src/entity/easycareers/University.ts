@@ -24,6 +24,14 @@ export class University extends BaseEntity {
     @Column({nullable: true})
     image: string;
 
+    @Field({nullable:true})
+    @Column({nullable: true})
+    description: string;
+
+    @Field({nullable:true})
+    @Column({nullable: true})
+    applicationUrl: string;
+
     @Field()
     @Column()
     isDeleted: boolean;
