@@ -33,7 +33,6 @@ export class ChangePasswordResolver {
 
         //@ts-ignore
         ctx.req.session!.userId = user.id; // keep the users loggedin
-
         //@ts-ignore
         await redis.del(forgotPasswordPrefix + token);
 
